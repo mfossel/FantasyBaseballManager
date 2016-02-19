@@ -92,3 +92,8 @@ C:\dev\FantasyBaseballManager\FantasyBaseballManager.API\FantasyBaseballManager.
 C:\dev\FantasyBaseballManager\FantasyBaseballManager.API\FantasyBaseballManager.API\obj\Debug\FantasyBaseballManager.API.pdb
 C:\dev\FantasyBaseballManager\FantasyBaseballManager.API\FantasyBaseballManager.API\obj\Debug\FantasyBaseballManager.API.Migrations.initial.resources
 C:\dev\FantasyBaseballManager\FantasyBaseballManager.API\FantasyBaseballManager.API\obj\Debug\FantasyBaseballManager.API.csproj.GenerateResource.Cache
+C:\dev\FantasyBaseballManager\FantasyBaseballManager.API\FantasyBaseballManager.API\bin\AutoMapper.dll
+C:\dev\FantasyBaseballManager\FantasyBaseballManager.API\FantasyBaseballManager.API\bin\System.Web.Cors.dll
+C:\dev\FantasyBaseballManager\FantasyBaseballManager.API\FantasyBaseballManager.API\bin\System.Web.Http.Cors.dll
+C:\dev\FantasyBaseballManager\FantasyBaseballManager.API\FantasyBaseballManager.API\bin\AutoMapper.xml
+C:\dev\FantasyBaseballManager\FantasyBaseballManager.API\FantasyBaseballManager.API\bin\System.Web.Http.Cors.xml

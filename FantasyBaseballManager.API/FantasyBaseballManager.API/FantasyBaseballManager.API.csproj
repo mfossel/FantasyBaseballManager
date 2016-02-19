@@ -140,6 +140,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HittersController.cs" />
+    <Compile Include="Controllers\LeaguesController.cs" />
     <Compile Include="Domain\Hitter.cs" />
     <Compile Include="Domain\League.cs" />
     <Compile Include="Domain\Pitcher.cs" />
@@ -177,7 +179,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201602182301164_initial.resx">

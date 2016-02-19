@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FantasyBaseballManager.API.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,6 +8,15 @@ namespace FantasyBaseballManager.API.Domain
 {
     public class Hitter
     {
+
+        public Hitter()
+        { }
+
+        public Hitter(HitterModel model)
+        {
+            this.Update(model);
+        }
+
         public int HitterId { get; set; }
         public string Name { get; set; }
         public int TeamId { get; set; }
@@ -22,6 +32,23 @@ namespace FantasyBaseballManager.API.Domain
 
         public virtual Team Team { get; set; }
 
+
+        public void Update(HitterModel model)
+        {
+            HitterId = model.HitterId;
+            Name = model.Name;
+            TeamId = model.TeamId;
+            MLBTeam = model.MLBTeam;
+            Position = model.Position;
+            Age = model.Age;
+            Height = model.Height;
+            Weight = model.Weight;
+            Average = model.Average;
+            HomeRuns = model.HomeRuns;
+            RBIs = model.RBIs;
+            StolenBases = model.StolenBases;
+
+        }
 
     }
 }
