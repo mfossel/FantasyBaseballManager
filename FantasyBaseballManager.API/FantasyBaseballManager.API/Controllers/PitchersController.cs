@@ -15,46 +15,46 @@ using AutoMapper;
 
 namespace FantasyBaseballManager.API.Controllers
 {
-    public class HittersController : ApiController
+    public class PitchersController : ApiController
     {
         private FantasyBaseballManagerDataContext db = new FantasyBaseballManagerDataContext();
 
-        // GET: api/Hitters
-        public IEnumerable<HitterModel> GetHitters()
+        // GET: api/Pitchers
+        public IEnumerable<PitcherModel> GetPitchers()
         {
-            return Mapper.Map<IEnumerable<HitterModel>>(db.Hitters);
+            return Mapper.Map<IEnumerable<PitcherModel>>(db.Pitchers);
         }
 
-        // GET: api/Hitters/5
-        [ResponseType(typeof(HitterModel))]
-        public IHttpActionResult GetHitter(int id)
+        // GET: api/Pitchers/5
+        [ResponseType(typeof(PitcherModel))]
+        public IHttpActionResult GetPitcher(int id)
         {
-            Hitter hitter = db.Hitters.Find(id);
-            if (hitter == null)
+            Pitcher pitcher = db.Pitchers.Find(id);
+            if (pitcher == null)
             {
                 return NotFound();
             }
 
-            return Ok(Mapper.Map<HitterModel>(hitter));
+            return Ok(Mapper.Map<PitcherModel>(pitcher));
         }
 
-        // PUT: api/Hitters/5
+        // PUT: api/Pitchers/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutHitter(int id, HitterModel hitter)
+        public IHttpActionResult PutPitcher(int id, PitcherModel pitcher)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != hitter.HitterId)
+            if (id != pitcher.PitcherId)
             {
                 return BadRequest();
             }
 
-            var dbHitter = db.Hitters.Find(id);
-            dbHitter.Update(hitter);
-            db.Entry(dbHitter).State = EntityState.Modified;
+            var dbPitcher = db.Pitchers.Find(id);
+            dbPitcher.Update(pitcher);
+            db.Entry(dbPitcher).State = EntityState.Modified;
 
             try
             {
@@ -62,7 +62,7 @@ namespace FantasyBaseballManager.API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!HitterExists(id))
+                if (!PitcherExists(id))
                 {
                     return NotFound();
                 }
@@ -75,39 +75,38 @@ namespace FantasyBaseballManager.API.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Hitters
-        [ResponseType(typeof(Hitter))]
-        public IHttpActionResult PostHitter(HitterModel hitter)
+        // POST: api/Pitchers
+        [ResponseType(typeof(Pitcher))]
+        public IHttpActionResult PostPitcher(PitcherModel pitcher)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+            var dbPitcher = new Pitcher(pitcher);
 
-            var dbHitter = new Hitter(hitter);
-
-            db.Hitters.Add(dbHitter);
+            db.Pitchers.Add(dbPitcher);
             db.SaveChanges();
 
-            hitter.HitterId = dbHitter.HitterId;
+            pitcher.PitcherId = dbPitcher.PitcherId;
 
-            return CreatedAtRoute("DefaultApi", new { id = hitter.HitterId }, hitter);
+            return CreatedAtRoute("DefaultApi", new { id = pitcher.PitcherId }, pitcher);
         }
 
-        // DELETE: api/Hitters/5
-        [ResponseType(typeof(Hitter))]
-        public IHttpActionResult DeleteHitter(int id)
+        // DELETE: api/Pitchers/5
+        [ResponseType(typeof(Pitcher))]
+        public IHttpActionResult DeletePitcher(int id)
         {
-            Hitter hitter = db.Hitters.Find(id);
-            if (hitter == null)
+            Pitcher pitcher = db.Pitchers.Find(id);
+            if (pitcher == null)
             {
                 return NotFound();
             }
 
-            db.Hitters.Remove(hitter);
+            db.Pitchers.Remove(pitcher);
             db.SaveChanges();
 
-            return Ok(Mapper.Map<HitterModel>(hitter));
+            return Ok(Mapper.Map<PitcherModel>(pitcher));
         }
 
         protected override void Dispose(bool disposing)
@@ -119,9 +118,9 @@ namespace FantasyBaseballManager.API.Controllers
             base.Dispose(disposing);
         }
 
-        private bool HitterExists(int id)
+        private bool PitcherExists(int id)
         {
-            return db.Hitters.Count(e => e.HitterId == id) > 0;
+            return db.Pitchers.Count(e => e.PitcherId == id) > 0;
         }
     }
 }

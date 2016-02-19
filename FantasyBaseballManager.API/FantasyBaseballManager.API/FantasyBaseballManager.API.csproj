@@ -142,6 +142,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HittersController.cs" />
     <Compile Include="Controllers\LeaguesController.cs" />
+    <Compile Include="Controllers\PitchersController.cs" />
     <Compile Include="Domain\Hitter.cs" />
     <Compile Include="Domain\League.cs" />
     <Compile Include="Domain\Pitcher.cs" />

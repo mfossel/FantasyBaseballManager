@@ -8,7 +8,7 @@ namespace FantasyBaseballManager.API.Domain
 {
     public class Hitter
     {
-
+        [Obsolete]
         public Hitter()
         { }
 
@@ -17,6 +17,8 @@ namespace FantasyBaseballManager.API.Domain
             this.Update(model);
         }
 
+
+     
         public int HitterId { get; set; }
         public string Name { get; set; }
         public int TeamId { get; set; }
