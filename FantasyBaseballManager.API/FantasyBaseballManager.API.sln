@@ -5,24 +5,26 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyBaseballManager.API", "FantasyBaseballManager.API\FantasyBaseballManager.API.csproj", "{A07635A0-7AD3-4AB7-AEFB-128EDD17F4E2}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FantasyBaseballManager.Web(1)", "..\FantasyBaseballManager.Web\", "{B19BA688-046E-49DE-A391-32BEF88AEEC6}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FantasyBaseballManager.Web(2)", "..\FantasyBaseballManager.Web\", "{38A80972-E4FC-4241-8764-367390A51300}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_53555"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54875"
 		Debug.AspNetCompiler.PhysicalPath = "..\FantasyBaseballManager.Web\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53555\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54875\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_53555"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54875"
 		Release.AspNetCompiler.PhysicalPath = "..\FantasyBaseballManager.Web\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53555\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54875\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "53555"
+		VWDPort = "54875"
+		SlnRelativePath = "..\FantasyBaseballManager.Web\"
+		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
 Global
@@ -35,10 +37,10 @@ Global
 		{A07635A0-7AD3-4AB7-AEFB-128EDD17F4E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A07635A0-7AD3-4AB7-AEFB-128EDD17F4E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A07635A0-7AD3-4AB7-AEFB-128EDD17F4E2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B19BA688-046E-49DE-A391-32BEF88AEEC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B19BA688-046E-49DE-A391-32BEF88AEEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B19BA688-046E-49DE-A391-32BEF88AEEC6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{B19BA688-046E-49DE-A391-32BEF88AEEC6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{38A80972-E4FC-4241-8764-367390A51300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A80972-E4FC-4241-8764-367390A51300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A80972-E4FC-4241-8764-367390A51300}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A80972-E4FC-4241-8764-367390A51300}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
